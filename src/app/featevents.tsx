@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { Calendar, MapPin } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -25,16 +26,22 @@ const FeatEvents = () => {
       </div>
 
       <div className="mt-10 box-border w-75 h-50 border-white flex flex-row ml-5">
-        <Card>
+        <Card className="rounded-3xl">
           <CardHeader>
-            <CardTitle>Card Title</CardTitle>
-            <CardDescription>Card Description</CardDescription>
+            <Image className="rounded-3xl" width={300} height={170} src={"/party.jpeg"} alt="party"/>
           </CardHeader>
           <CardContent>
-            <p>Card Content</p>
+            <p className="font-bold text-l">Mr. & Mrs. Malik Wedding</p>
+            <CardDescription className="flex items-center">
+              <Calendar className="mx-1" color={"#2A93D5"} size={15}/>
+              23, Sept 25
+
+              <MapPin className="mx-1" color={"#2A93D5"} size={15} />
+              Cagayan de Oro City
+            </CardDescription>
           </CardContent>
           <CardFooter>
-            <p>Card Footer</p>
+            <p>Description of an event</p>
           </CardFooter>
         </Card>
       </div>
