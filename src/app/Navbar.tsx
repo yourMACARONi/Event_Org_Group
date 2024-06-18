@@ -28,7 +28,7 @@ const Navbar = () => {
                   text-xl
                   hover:bg-white 
                   hover:text-black 
-                  rounded-lg p-3 ml-10"
+                  rounded-lg p-3 ml-5"
                 >
                   Home
                 </a>
@@ -39,7 +39,7 @@ const Navbar = () => {
                   text-xl
                   hover:bg-white 
                   hover:text-black 
-                  rounded-lg p-3 ml-10"
+                  rounded-lg p-3 ml-5"
                 >
                   Events
                 </a>
@@ -50,7 +50,7 @@ const Navbar = () => {
                   text-xl
                   hover:bg-white 
                   hover:text-black 
-                  rounded-lg p-3 ml-10"
+                  rounded-lg p-3 ml-5"
                 >
                   Services
                 </a>
@@ -61,7 +61,7 @@ const Navbar = () => {
                   text-xl
                   hover:bg-white 
                   hover:text-black 
-                  rounded-lg p-3 ml-10"
+                  rounded-lg p-3 ml-5"
                 >
                   Schedule
                 </a>
@@ -72,7 +72,7 @@ const Navbar = () => {
                   text-xl
                   hover:bg-white 
                   hover:text-black 
-                  rounded-lg p-3 ml-10"
+                  rounded-lg p-3 ml-5"
                 >
                   About
                 </a>
@@ -83,7 +83,7 @@ const Navbar = () => {
                   text-xl
                   hover:bg-white 
                   hover:text-black 
-                  rounded-lg p-3 ml-10"
+                  rounded-lg p-3 ml-5"
                 >
                   Contact Us
                 </a>

@@ -8,7 +8,7 @@ import Footer from "./footer";
 
 export default function Home() {
   return (
-    <main className="bg-party bg-no-repeat bg-cover bg-center justify-center backdrop-brightness-75">
+    <main className="bg-party max-h-full max-w-full bg-no-repeat justify-center relative  ">
     <div>
       <Navbar />
 

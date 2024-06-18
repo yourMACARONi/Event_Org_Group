@@ -14,10 +14,14 @@ import FeatureButton from "@/components/localComponent/LeftRightButton";
 const FeatEvents = () => {
   return (
     <div className="bg-black w-100% h-96 mt-1">
-      <div className="flex flex-row">
-        <h1 className="text-4xl font-bold">Featured Events</h1>
+      <div className="flex flex-row justify-between ">
+        <h1 className="text-4xl font-bold ml-10 mt-5">Featured Events</h1>
 
-        <FeatureButton />
+       
+       <div className="mt-5 mr-10">
+       <FeatureButton/>
+       </div>
+        
       </div>
 
       <div className="mt-10 box-border w-75 h-50 border-white flex flex-row ml-5">
