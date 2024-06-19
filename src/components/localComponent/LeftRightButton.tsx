@@ -1,6 +1,4 @@
 import { Button } from "../ui/button";
-import { Video } from "lucide-react";
-import { Search } from "lucide-react";
 import { ChevronRight } from "lucide-react";
 import { ChevronLeft } from "lucide-react";
 

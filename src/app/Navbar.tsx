@@ -1,22 +1,25 @@
 import React from "react";
 import Image from "next/image";
-import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
-import { buttonVariants } from "@/components/ui/button";
+import Burger from "./burger";
 
 const Navbar = () => {
   return (
-    <>
+    <div >
+  
       <nav className="bg-black">
-        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-10 ">
           <div className="flex items-center justify-between h-20">
             <div className="flex item-center">
-              <div>
+              <div className="flex flex-row">
+              <Burger/>
                 <Image
+                className="ml-[20px]"
                   src="/eLogo.png"
                   alt="event logo"
                   width={200}
                   height={200}
+                  
                 />
               </div>
             </div>
@@ -116,7 +119,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 

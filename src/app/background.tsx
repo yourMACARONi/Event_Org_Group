@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-// import { Homecard } from "@/components/ui/homecard";
 import {
   Card,
   CardContent,

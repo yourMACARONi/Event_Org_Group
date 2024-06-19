@@ -54,7 +54,7 @@ const config = {
         },
       },
       backgroundImage: {
-        "party":"url('/party.jpeg')",
+        "party":"url('/pipolparty.jpg')",
       },
       borderRadius: {
         lg: "var(--radius)",

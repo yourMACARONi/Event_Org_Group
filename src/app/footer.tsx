@@ -1,7 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import { Search } from "lucide-react";
-import { Input } from "@/components/ui/input";
 import {
   FaYoutube,
   FaTwitter,
@@ -15,8 +12,8 @@ import {
 const Footer = () => {
   return (
     <>
-      <div
-        className="footer bg-gray-200 text-white h-1/3 rounded-t-lg border-t-1 border-solid border-gray-900 pb-30 flex-row flex "
+      <footer
+        className="footer bg-gray-200 text-white h-1/3 border-t-1 border-solid border-gray-900 pb-20 flex-row flex"
         style={{
           background: "#000508",
         }}
@@ -117,7 +114,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 };
