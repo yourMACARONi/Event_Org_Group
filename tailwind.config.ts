@@ -55,6 +55,7 @@ const config = {
       },
       backgroundImage: {
         "party":"url('/pipolparty.jpg')",
+        "event-details":"url('/bg_img_event_details.png')",
       },
       borderRadius: {
         lg: "var(--radius)",

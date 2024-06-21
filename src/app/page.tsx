@@ -7,7 +7,7 @@ import Burger from "./burger";
 
 export default function Home() {
   return (
-    <main className="bg-party max-h-full max-w-full bg-no-repeat bg-cover justify-center relative  ">
+    <main className="bg-party max-h-full max-w-full bg-no-repeat bg-cover justify-center relative ">
       <div>
       
         <Navbar />
