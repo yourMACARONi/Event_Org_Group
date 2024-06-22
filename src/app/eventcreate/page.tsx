@@ -104,19 +104,37 @@ export default function Home() {
   }
 
   return (
-    <main>
+    <main className='bg-gradient-to-b from-amber-400 to-black'>
         <Navbar/>
     
-    <div className={cn(fontSans.variable, "font-sans mx-[70px] my-[30px]")}>
-      <h1 className="grid grid-cols-7 gap-x-2 text-[45px]" >
-        <p>CREATE</p><p className="text-amber-300">EVENT</p>
+    <div className={cn(fontSans.variable, "font-sans mx-[70px] my-[30px] ")}>
+      <h1 className="gap-x-2 text-[65px] font-bold flex flex-1 items-center justify-center" >
+        <p>CREATE</p><p className="text-amber-700">EVENT</p>
       </h1>
-      <div className="grid grid-cols-2 gap-x-2">
+
+
+
+      <div className='flex flex-1 items-center justify-center mb-10'>
+          <button className="border-2 border-white border-dashed text-white px-[22.2%] py-[10.9%] rounded-3xl mt-9" onClick={handleUploadClick}>
+            {file ? `${file.name}` : <FileUp size={60} />}
+          </button>
+
+          {/* 👇 Notice the `display: hidden` on the input */}
+          <input
+            type="file"
+            ref={inputRef}
+            onChange={handleFileChange}
+            style={{ display: 'none' }}
+          />
+        </div>
+
+          
+      <div className="flex flex-1 items-center justify-center">
         <div>
-          <p className='mx-[10px] my-[5px]'>Event name</p>
-          <Input className='w-[600px]' type="text" placeholder="Enter event name" />
+          <p className='mx-[10px] my-[5px] '>Event name</p>
+          <Input className='placeholder-black w-[600px] bg-white' type="text" placeholder="Enter event name" />
           <p className='mx-[10px] my-[5px] mt-5'>Event Type</p>
-          <Input className='w-[600px]' type="text" placeholder="Enter event type" />
+          <Input className='placeholder-black w-[600px] bg-white' type="text" placeholder="Enter event type" />
           <p className='mx-[10px] my-[5px] mt-5'>Event Date</p>
           
           <Form {...form}>
@@ -132,7 +150,7 @@ export default function Home() {
                         <Button
                           variant={"outline"}
                           className={cn(
-                            "pl-3 text-left font-normal text-black w-[600px]",
+                            "pl-3 text-left font-normal placeholder-black w-[600px] bg-white",
                             !field.value && "text-muted-foreground"
                           )}
                         >
@@ -164,46 +182,16 @@ export default function Home() {
             />
           </form>
           </Form>
-          <p className='mx-[10px] my-[5px] mt-5'>Event Time</p>
-          <Select>
-            <SelectTrigger className="w-[180px] w-[600px]">
-              <SelectValue placeholder="Time" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="9:00AM">9:00AM</SelectItem>
-              <SelectItem value="10:00AM">10:00AM</SelectItem>
-              <SelectItem value="11:00AM">11:00AM</SelectItem>
-              <SelectItem value="12:00PM">12:00PM</SelectItem>
-            </SelectContent>
-          </Select>
+         
         </div>
         <div>
-          <div>
-          <button className="border border-black bg-white text-black px-[45.2%] py-[20.9%] rounded-sm mt-9" onClick={handleUploadClick}>
-            {file ? `${file.name}` : <FileUp size={60} />}
-          </button>
-
-          {/* 👇 Notice the `display: hidden` on the input */}
-          <input
-            type="file"
-            ref={inputRef}
-            onChange={handleFileChange}
-            style={{ display: 'none' }}
-          />
-          </div>
+         
         </div>
       </div>
-      <p className='mx-[10px] my-[5px] mt-5'>Venue Location</p>
-      <Input className='w-[100%]' type="text" placeholder="Enter Venue Location" />
-      <p className='mx-[10px] my-[5px] mt-5'>Description</p>
-      <Textarea className='h-[200px]' placeholder="Write your description..." />
-      <p className='mx-[10px] my-[5px] mt-5'>Invitation Message</p>
-      <Textarea className='h-[200px]' placeholder="Write your message..." />
-      <p className='mx-[10px] my-[5px] mt-5'>People To Invite (e.g. random@gmail.com, random2@gmail.com)</p>
-      <Textarea className='h-[200px]' placeholder="Write the email..." />
+     
 
-      <div>
-      <Button className={cn(fontSans.variable , 'py-[27px] mt-[50px] w-[450px] text-[30px] text-bold hover:bg-amber-400 ')}>
+      <div className='flex flex-1 items-center justify-center'>
+      <Button className={cn(fontSans.variable , 'py-[27px] mt-[50px] w-[600px] text-[25px] text-bold hover:bg-amber-500 ')}>
         Submit</Button>
       </div>
       

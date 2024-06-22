@@ -23,7 +23,6 @@ const Background = () => {
             MANAGEMENT
           </h1>
         </CardContent>
-        
       </Card>
     </div>
   );
