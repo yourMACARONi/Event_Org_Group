@@ -32,14 +32,6 @@ import {
 } from "@/components/ui/popover"
 import { toast } from "@/components/ui/use-toast"
 
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
-
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -135,7 +127,10 @@ export default function Home() {
           <Input className='placeholder-black w-[600px] bg-white' type="text" placeholder="Enter event name" />
           <p className='mx-[10px] my-[5px] mt-5'>Event Type</p>
           <Input className='placeholder-black w-[600px] bg-white' type="text" placeholder="Enter event type" />
+          <p className='mx-[10px] my-[5px] mt-5'>Event Location</p>
+          <Input className='placeholder-black w-[600px] bg-white' type="text" placeholder="Enter event location" />
           <p className='mx-[10px] my-[5px] mt-5'>Event Date</p>
+          
           
           <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 ">

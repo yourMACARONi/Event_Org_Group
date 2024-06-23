@@ -4,7 +4,7 @@ import Image from 'next/image';
 const PopularEvents = () => {
   return (
       <div className="mt-10 w-full px-4">
-      <h2 style={{ display: 'flex', fontSize: '2rem', color: 'white', fontWeight: 'bold', marginLeft: '10px' }}>
+      <h2 style={{ display: 'flex', fontSize: '3rem', color: 'white', fontWeight: 'bold', marginLeft: '10px' }}>
         <br/>Popular Events </h2><br/>
 
       <div className="flex flex-row overflow-x-scroll space-x-6 mt-6 pb-6"> {events.map((event, index) => (

@@ -4,15 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Navbar from "../Navbar";
 import Footer from "../footer";
-import {
-  FaYoutube,
-  FaTwitter,
-  FaDiscord,
-  FaReddit,
-  FaGithub,
-  FaTelegram,
-  FaGlobe,
-} from "react-icons/fa";
+
 
 function Settings() {
   return (

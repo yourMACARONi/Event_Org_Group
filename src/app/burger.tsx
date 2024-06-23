@@ -9,6 +9,7 @@ import { Bell } from "lucide-react";
 import { ContactRound } from "lucide-react";
 import { MessageCircle } from "lucide-react";
 import { Settings } from "lucide-react";
+import { Mail } from "lucide-react"; 
 
 import Logout from "@/components/localComponent/logout";
 
@@ -77,23 +78,32 @@ export default function Burger() {
                 onClick={() => {
                   router.push("/profile");
                 }}
-                className=
-                  "border-0 text-white text-2xl"
-                
+                className="border-0 text-white text-2xl"
                 variant="outline"
               >
-                <CircleUserRound className="h-8 w-8 mt-0 ml-2 mr-3" />My Profile
+                <CircleUserRound className="h-8 w-8 mt-0 ml-2 mr-3" />
+                My Profile
               </Button>
 
               <Button
-                onClick={() => router.push("/")}
+                onClick={() => {
+                  router.push("/");
+                }}
                 className="border-0 mt-10"
                 variant="outline"
               >
                 <Bell className="h-5 w-5 mt-0 ml-2 mr-3" /> Notification
               </Button>
-              <Button className="border-0" variant="outline">
-                <CalendarCheck className="h-5 w-5 mt-0 ml-2 mr-3" /> My Events
+
+
+              <Button
+                onClick={() => {
+                  router.push("/invitation");
+                }}
+                className="border-0"
+                variant="outline"
+              >
+                <Mail className="h-5 w-5 mt-0 ml-2 mr-3" /> Invitation
               </Button>
               <Button className="border-0" variant="outline">
                 <ContactRound className="h-5 w-5 mt-0 ml-2 mr-3" /> Attendees
@@ -101,11 +111,13 @@ export default function Burger() {
               <Button className="border-0" variant="outline">
                 <MessageCircle className="h-5 w-5 mt-0 ml-2 mr-3" /> Feedbacks
               </Button>
-              <Button 
-               onClick={() => {
-                router.push("/settings");
-              }}
-              className="border-0" variant="outline">
+              <Button
+                onClick={() => {
+                  router.push("/settings");
+                }}
+                className="border-0"
+                variant="outline"
+              >
                 <Settings className="h-5 w-5 mt-0 ml-2 mr-3" /> Settings
               </Button>
 
