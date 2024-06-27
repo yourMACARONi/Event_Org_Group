@@ -87,7 +87,7 @@ export default function Burger() {
 
               <Button
                 onClick={() => {
-                  router.push("/");
+                  router.push("/notification");
                 }}
                 className="border-0 mt-10"
                 variant="outline"
