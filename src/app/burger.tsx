@@ -105,7 +105,10 @@ export default function Burger() {
               >
                 <Mail className="h-5 w-5 mt-0 ml-2 mr-3" /> Invitation
               </Button>
-              <Button className="border-0" variant="outline">
+              <Button onClick={() => {
+                  router.push("/attendee");
+                }}
+                className="border-0" variant="outline">
                 <ContactRound className="h-5 w-5 mt-0 ml-2 mr-3" /> Attendees
               </Button>
               <Button className="border-0" variant="outline">
